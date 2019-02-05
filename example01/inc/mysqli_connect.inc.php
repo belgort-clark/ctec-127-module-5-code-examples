@@ -4,12 +4,6 @@
 $host = '';
 $username = '';
 $password = '';
-$databasse = '';
-
-# Create a new connection to the database
-$host = '';
-$username = '';
-$password = '';
 $database = '';
 
 $db = new mysqli(
