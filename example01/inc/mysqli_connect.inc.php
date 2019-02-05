@@ -1,10 +1,6 @@
 <?php # mysqli_connect.inc.php
 
 # Create a new connection to the database
-$host = '';
-$username = '';
-$password = '';
-$database = '';
 
 $db = new mysqli(
 	$host,

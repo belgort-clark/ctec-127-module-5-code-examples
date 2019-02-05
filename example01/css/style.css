@@ -10,3 +10,7 @@ body {
 .table .thead-dark th {
     background-color: #336699;
 }
+
+th a:link, th a:visited, th a:hover, th a:active {
+    color: #ffffff;
+}
