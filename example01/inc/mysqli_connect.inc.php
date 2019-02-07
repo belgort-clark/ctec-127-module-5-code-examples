@@ -1,10 +1,10 @@
 <?php # mysqli_connect.inc.php
 
 # Create a new connection to the database
-$host = '';
-$username = '';
+$host = 'localhost';
+$username = 'root';
 $password = '';
-$database = '';
+$database = 'ctec';
 
 $db = new mysqli(
 	$host,

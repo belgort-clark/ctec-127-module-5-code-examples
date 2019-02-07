@@ -14,3 +14,11 @@ body {
 th a:link, th a:visited, th a:hover, th a:active {
     color: #ffffff;
 }
+
+.selectedlink {
+    color: #000000;
+}
+
+.selectedlink:hover {
+    text-decoration: underline;
+}

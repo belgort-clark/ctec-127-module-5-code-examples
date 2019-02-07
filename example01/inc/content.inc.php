@@ -6,7 +6,7 @@ include "mysqli_connect.inc.php";
 // $sql = "SELECT * FROM student WHERE first_name LIKE 'z%' ORDER BY first_name";
 
 $orderby = 'last_name';
-$filter = 'A';
+$filter = '';
 
 if (isset($_GET['filter'])) {
     $filter = $_GET['filter'];
@@ -34,7 +34,13 @@ if ($result->num_rows == 0) {
     $letters = range('A','Z');
 
     for ($i=0; $i < count($letters) ; $i++) { 
-        echo "<a href='?filter=$letters[$i]'>$letters[$i]</a>&nbsp;&nbsp;";
+        if ($filter == $letters[$i]) {
+            $class = 'class="selectedlink"';
+        } else {
+            $class = '';
+        }
+
+        echo "<a $class href='?filter=$letters[$i]'>$letters[$i]</a>&nbsp;&nbsp;";
     }
 
 
