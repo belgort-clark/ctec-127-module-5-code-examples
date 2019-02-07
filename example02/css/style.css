@@ -1,0 +1,22 @@
+/* style.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+
+.table .thead-dark th {
+    background-color: #336699;
+}
+
+/* Embedded CSS for learning only */
+label {display: inline-block;
+    width:150px;
+    font-style: bold;
+    margin-bottom: 1em;
+}
+.errors {color:#ff0000;
+        font-weight: bold;
+}
